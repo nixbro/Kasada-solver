@@ -1,5 +1,6 @@
  ![Image Alt](https://github.com/nixbro/Kasada-solver/blob/d6b38299e26637a12e9673cab49ea4d45bf10772/decompiledjs.png)
- ![Image Alt](https://github.com/nixbro/Kasada-solver/blob/ceeb2e915f32f9e548c5cd3e0856b3e31d1cb590/380994B1-A1AD-4F1D-940D-5AA17898B157.png)
+ 
+
 # Understanding Kasada Bot Protection: A High-Level Overview
 
 A conceptual look at modern web protection systems* contact @Nixnode on telegram for more info.
