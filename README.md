@@ -127,11 +127,11 @@ Since CT is expensive but reusable, and CD is cheap but single-use.
 
 The Kasada script uses multiple obfuscation layers:
 
-1. **VM Obfuscation**: Core logic compiled to bytecode executed by embedded VM
-2. **String Encryption**: All strings encrypted and decrypted at runtime
-3. **Control Flow Flattening**: Code flow made non-linear and hard to trace
-4. **Dead Code Injection**: Fake code paths that never execute
-5. **Variable Name Mangling**: All variables renamed to meaningless names
+1. VM Obfuscation: Core logic compiled to bytecode executed by embedded VM
+2. String Encryption: All strings encrypted and decrypted at runtime
+3. Control Flow Flattening: Code flow made non-linear and hard to trace
+4. Dead Code Injection: Fake code paths that never execute
+5. Variable Name Mangling: All variables renamed to meaningless names
 
 This makes static analysis extremely difficult.
 
@@ -139,7 +139,7 @@ This makes static analysis extremely difficult.
 
 The CD token contains solutions to cryptographic challenges:
 
-**Challenge Structure:**
+Challenge Structure:
 - Server provides puzzle parameters (difficulty, prefix, etc.)
 - Client must find solutions (like crypto mining)
 - Solutions are included in CD token
@@ -151,20 +151,20 @@ The "answers" array in CD contains these solutions.
 
 Server-side validates multiple aspects:
 
-**Timestamp Validation:**
+Timestamp Validation:
 - CD must be recent (typically < 5 seconds old)
 - Prevents replay attacks with old tokens
 
-**Uniqueness Validation:**
+Uniqueness Validation:
 - Each CD has unique ID tracked server-side
 - Once used, marked as consumed
 - Prevents reuse of same CD
 
-**Challenge Validation:**
+Challenge Validation:
 - Solutions must match server-issued challenges
 - Can't fake answers without solving
 
-** Signature Validation:**
+ Signature Validation:
 - Signature binds CT and CD together
 - Prevents mixing tokens from different sessions
 - Ensures tokens haven't been modified
@@ -175,7 +175,6 @@ Server-side validates multiple aspects:
 Found this interesting? Have questions? Want to collaborate?
 
 - ⭐ Star the repo if you learned something
-- 🐛 Open an issue if you find bugs
 - 💬 Start a discussion to share insights
 - 🤝 Contribute improvements
 
